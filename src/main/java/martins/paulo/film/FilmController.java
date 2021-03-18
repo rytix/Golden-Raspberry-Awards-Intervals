@@ -9,7 +9,8 @@ import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import persistence.CSVConverter;
+import martins.paulo.persistence.CSVConverter;
+
 
 @RestController
 public class FilmController {
@@ -36,7 +37,7 @@ public class FilmController {
 
 			return getMinMaxAwardInterval(shortAwardIntervalMap, longAwardIntervalMap);
 		} catch (IOException e) {
-
+			System.out.println(e);
 		}
 		return null;
 	}

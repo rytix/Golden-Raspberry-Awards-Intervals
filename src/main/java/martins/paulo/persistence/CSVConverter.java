@@ -1,4 +1,4 @@
-package persistence;
+package martins.paulo.persistence;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +20,7 @@ public class CSVConverter {
 
 	public static List<Film> getFilms() throws IOException {
 		List<Film> films = new ArrayList<Film>();
-		String fileName = "src/main/resources/static/movielist.csv";
+		String fileName = "./movielist.csv";
 		Path myPath = Paths.get(fileName);
 
 		CSVParser parser = new CSVParserBuilder().withSeparator(';').build();
