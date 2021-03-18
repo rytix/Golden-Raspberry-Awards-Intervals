@@ -1,4 +1,4 @@
-#Golden Raspberry Awards
+# Golden Raspberry Awards
 
 Mostra os produtores que ganharam com a maior e a menor frequência o prêmio framboesa de ouro.
 
